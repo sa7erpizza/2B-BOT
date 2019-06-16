@@ -121,63 +121,63 @@ ${prefix}contact → ارسال اقتراح او لمراسلة صاحب الب
 **
   `
 ,`
-        ***__Administrative Orders__***
+            **اوامر الادمنية**
 **
-${prefix}move @user /  لسحب الشخص الى روومك
-${prefix}bc / رسالة جماعية الى كل اعضاء السيرفر
-${prefix}bk / رسالة جماعيه مع
-${prefix}rolebc <everyone or @role> / راسال رساله جماعيه لرتبه محدده
-${prefix}role @user <rank> / لأعطاء رتبة لعضو معين
-${prefix}roleremove @user <rank> / لازالة الرتبة من شخص معين
-${prefix}give all <rank> / لأعطاء رتبة للجميع
-${prefix}give humans <rank> / لأعطاء رتبة للاشخاص فقط
-${prefix}give bots <rank> / لأعطاء رتبة لجميع البوتات
-${prefix}hchannel / اخفاء الشات
-${prefix}schannel / اضهار الشات المخفية
-${prefix}clr <numbr> / مسح الشات بعدد
-${prefix}clear / مسح الشات
-${prefix}mute @user <time> / اعطاء العضو ميوت 
-${prefix}unmute @user / لفك الميوت عن الشخص 
-${prefix}kick @user <reason> / طرد الشخص من السيرفر
-${prefix}ban @user <reason> / حضر الشخص من السيرفر
-${prefix}mutechannel / تقفيل الشات
-${prefix}unmutechannel / فتح الشات
-${prefix}dc / مسح كل الرومات
-${prefix}dr / <مسح كل الرانكات <لازم تكون رانك البوت فوق كل الرانكات
-${prefix}ct <name> / انشاء شات
-${prefix}cv <name> / انشاء رووم فويس
-${prefix}temp / لانشاء روم مؤقت
-${prefix}delet <name> / مسح الشات او الرووم فويس
-${prefix}make <number> / ينشا لك الوان مع كم الوان تبي
-${prefix}color <number> / لختيار لون
-${prefix}deletecolors <number> / لحذف الالوان
+${prefix}move @user →  لسحب الشخص الى روومك
+${prefix}bc → رسالة جماعية الى كل اعضاء السيرفر
+${prefix}bk → رسالة جماعيه مع
+${prefix}rolebc <everyone or @role> → راسال رساله جماعيه لرتبه محدده
+${prefix}role @user <rank> → لأعطاء رتبة لعضو معين
+${prefix}roleremove @user <rank> → لازالة الرتبة من شخص معين
+${prefix}give all <rank> → لأعطاء رتبة للجميع
+${prefix}give humans <rank> → لأعطاء رتبة للاشخاص فقط
+${prefix}give bots <rank> → لأعطاء رتبة لجميع البوتات
+${prefix}hchannel → اخفاء الشات
+${prefix}schannel → اضهار الشات المخفية
+${prefix}clr <numbr> → مسح الشات بعدد
+${prefix}clear → مسح الشات
+${prefix}mute @user <time> → اعطاء العضو ميوت 
+${prefix}unmute @user → لفك الميوت عن الشخص 
+${prefix}kick @user <reason> → طرد الشخص من السيرفر
+${prefix}ban @user <reason> → حضر الشخص من السيرفر
+${prefix}mutechannel → تقفيل الشات
+${prefix}unmutechannel → فتح الشات
+${prefix}dc → مسح كل الرومات
+${prefix}dr → <مسح كل الرانكات <لازم تكون رانك البوت فوق كل الرانكات
+${prefix}ct <name> → انشاء شات
+${prefix}cv <name> → انشاء رووم فويس
+${prefix}temp → لانشاء روم مؤقت
+${prefix}delet <name> → مسح الشات او الرووم فويس
+${prefix}make <number> → ينشا لك الوان مع كم الوان تبي
+${prefix}color <number> → لختيار لون
+${prefix}deletecolors <number> → لحذف الالوان
 **
    `,`
-        ***__Music orders__***
+           **اوامر الموسيقي**
 **
-${prefix}play / لتشغيل أغنية برآبط أو بأسم
-${prefix}skip / لتجآوز الأغنية الحآلية
-${prefix}pause / إيقآف الأغنية مؤقتا
-${prefix}resume / لموآصلة الإغنية بعد إيقآفهآ مؤقتا
-${prefix}vol / لتغيير درجة الصوت 100 - 0
-${prefix}stop / لإخرآج البوت من الروم
-${prefix}np / لمعرفة الأغنية المشغلة حآليا
-${prefix}queue / لمعرفة قآئمة التشغيل
+${prefix}play → لتشغيل أغنية برآبط أو بأسم
+${prefix}skip → لتجآوز الأغنية الحآلية
+${prefix}pause → إيقآف الأغنية مؤقتا
+${prefix}resume → لموآصلة الإغنية بعد إيقآفهآ مؤقتا
+${prefix}vol → لتغيير درجة الصوت 100 - 0
+${prefix}stop → لإخرآج البوت من الروم
+${prefix}np → لمعرفة الأغنية المشغلة حآليا
+${prefix}queue → لمعرفة قآئمة التشغيل
 **
-        ***__Games orders__***
+        **اوامر الالعاب**
  **       
-${prefix}rps / حجر ورقة مقص
-${prefix}speed / اسرع كتابة
-${prefix}quas / اسئلة عامة
-${prefix}نكت / نكت 
-${prefix}لعبة فكك / فكك
-${prefix}عواصم عشوائي/عواصم
-${prefix}لعبة كت تويت / كت تويت
-${prefix}roll <number> / قرعة
-${prefix}لو خيروك بطريقة حلوة / لو خيروك
-${prefix}لعبة مريم / مريم
-${prefix}فوائد ونصائح  / هل تعلم
-${prefix}يعطيك عقابات قاسية / عقاب 
+${prefix}rps → حجر ورقة مقص
+${prefix}speed → اسرع كتابة
+${prefix}quas → اسئلة عامة
+${prefix}نكت → نكت 
+${prefix}لعبة فكك → فكك
+${prefix}عواصم عشوائي → عواصم
+${prefix}لعبة كت تويت → كت تويت
+${prefix}roll <number> → قرعة
+${prefix}لو خيروك بطريقة حلوة → لو خيروك
+${prefix}لعبة مريم → مريم
+${prefix}فوائد ونصائح  → هل تعلم
+${prefix}يعطيك عقابات قاسية → عقاب 
 =.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.
 welcome يتم الترحيب فى روم باسم
 G.setwelcomer <text channel name> لاختيار روم للترحيب
