@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['2.B SERVER :mtasa://46.105.250.205:26098','2help'];
+    var setGame = ['mtasa://46.105.250.205:26098','2help'];
     var i = -1;
     var j = 0;
     setInterval(function (){
