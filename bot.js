@@ -62,92 +62,92 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
     let pages = [`**
                 **الاوامر العامة**
 **
-${prefix}allbots → لعرض جميع البوتات الي بالسيرفر
-${prefix}server → يعرض لك معلومات عن السيرفر
-${prefix}bot → يعرض لك كل معلومات البوت
+${prefix}allbots > لعرض جميع البوتات الي بالسيرفر
+${prefix}server > يعرض لك معلومات عن السيرفر
+${prefix}bot > يعرض لك كل معلومات البوت
 ${prefix}count → يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
-${prefix}invite-codes → يعرض لك روابط الانفايتات حكك في السيرفر 
-${prefix}cal → اله حاسبة
-${prefix}trans <language> <any thing> → يترجم لك الي تبيه من اي لغة
-${prefix}short → يختصر لك رابط كبير الى رابط صغير
-${prefix}tag → يكتب لك الكلمة بشكل جميل وكبير
-${prefix}google → للبحث في قوقل عن طريق الدسكورد
-${prefix}perms → يعرض لك برمشناتك بالسيرفر
-${prefix}z5rf → يزخرف لك كلمة او جملة
-${prefix}rooms → يعرض لك كل الرومات الي بالسيرفر مع عددها
-${prefix}roles → يعرض لك كل الرانكات بالسيرفر بشكل جميل
-${prefix}emojilist → يعرض لك كل الايموجيات الي بالسيرفر
-${prefix}say → يكرر الكلام الي تكتبو
-${prefix}image → صورة السيرفر
-${prefix}members → عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص
-${prefix}id → معلومات عنك
-${prefix}bans → عدد الاشخاص المبندة 
-${prefix}avatar → صورتك او صورة الي تمنشنو
-${prefix}embed → يكرر الي تقولو بشكل حلو
-${prefix}emoji <any things> → لتحويل اي كلمه تقولها الي ايموجي
-${prefix}inv → لدعوة البوت الى سيرفرك
-${prefix}support → سيرفر الدعم
-${prefix}contact → ارسال اقتراح او لمراسلة صاحب البوت
+${prefix}invite-codes > يعرض لك روابط الانفايتات حكك في السيرفر 
+${prefix}cal > اله حاسبة
+${prefix}trans [language] [any thing] > يترجم لك الي تبيه من اي لغة
+${prefix}short > يختصر لك رابط كبير الى رابط صغير
+${prefix}tag > يكتب لك الكلمة بشكل جميل وكبير
+${prefix}google > للبحث في قوقل عن طريق الدسكورد
+${prefix}perms > يعرض لك برمشناتك بالسيرفر
+${prefix}z5rf > يزخرف لك كلمة او جملة
+${prefix}rooms > يعرض لك كل الرومات الي بالسيرفر مع عددها
+${prefix}roles > يعرض لك كل الرانكات بالسيرفر بشكل جميل
+${prefix}emojilist > يعرض لك كل الايموجيات الي بالسيرفر
+${prefix}say > يكرر الكلام الي تكتبو
+${prefix}image > صورة السيرفر
+${prefix}members > عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص
+${prefix}id > معلومات عنك
+${prefix}bans > عدد الاشخاص المبندة 
+${prefix}avatar > صورتك او صورة الي تمنشنو
+${prefix}embed > يكرر الي تقولو بشكل حلو
+${prefix}emoji [any things] > لتحويل اي كلمه تقولها الي ايموجي
+${prefix}inv > لدعوة البوت الى سيرفرك
+${prefix}support > سيرفر الدعم
+${prefix}contact > ارسال اقتراح او لمراسلة صاحب البوت
 **
   `
 ,`
             **اوامر الادمنية**
 **
-${prefix}move @user →  لسحب الشخص الى روومك
-${prefix}bc → رسالة جماعية الى كل اعضاء السيرفر
-${prefix}bk → رسالة جماعيه مع
-${prefix}rolebc <everyone or @role> → راسال رساله جماعيه لرتبه محدده
-${prefix}role @user <rank> → لأعطاء رتبة لعضو معين
-${prefix}roleremove @user <rank> → لازالة الرتبة من شخص معين
-${prefix}give all <rank> → لأعطاء رتبة للجميع
-${prefix}give humans <rank> → لأعطاء رتبة للاشخاص فقط
-${prefix}give bots <rank> → لأعطاء رتبة لجميع البوتات
-${prefix}hchannel → اخفاء الشات
-${prefix}schannel → اضهار الشات المخفية
-${prefix}clr <numbr> → مسح الشات بعدد
-${prefix}clear → مسح الشات
-${prefix}mute @user <time> → اعطاء العضو ميوت 
-${prefix}unmute @user → لفك الميوت عن الشخص 
-${prefix}kick @user <reason> → طرد الشخص من السيرفر
-${prefix}ban @user <reason> → حضر الشخص من السيرفر
-${prefix}mutechannel → تقفيل الشات
-${prefix}unmutechannel → فتح الشات
-${prefix}dc → مسح كل الرومات
-${prefix}dr → <مسح كل الرانكات <لازم تكون رانك البوت فوق كل الرانكات
-${prefix}ct <name> → انشاء شات
-${prefix}cv <name> → انشاء رووم فويس
-${prefix}temp → لانشاء روم مؤقت
-${prefix}delet <name> → مسح الشات او الرووم فويس
-${prefix}make <number> → ينشا لك الوان مع كم الوان تبي
-${prefix}color <number> → لختيار لون
-${prefix}deletecolors <number> → لحذف الالوان
+${prefix}move @user >  لسحب الشخص الى روومك
+${prefix}bc > رسالة جماعية الى كل اعضاء السيرفر
+${prefix}bk > رسالة جماعيه مع
+${prefix}rolebc [everyone or @role] > راسال رساله جماعيه لرتبه محدده
+${prefix}role @user [rank] > لأعطاء رتبة لعضو معين
+${prefix}roleremove @user [rank] > لازالة الرتبة من شخص معين
+${prefix}give all [rank] > لأعطاء رتبة للجميع
+${prefix}give humans [rank] > لأعطاء رتبة للاشخاص فقط
+${prefix}give bots [rank] > لأعطاء رتبة لجميع البوتات
+${prefix}hchannel > اخفاء الشات
+${prefix}schannel > اضهار الشات المخفية
+${prefix}clr [numbr] > مسح الشات بعدد
+${prefix}clear > مسح الشات
+${prefix}mute @user [time] > اعطاء العضو ميوت 
+${prefix}unmute @user > لفك الميوت عن الشخص 
+${prefix}kick @user [reason] > طرد الشخص من السيرفر
+${prefix}ban @user [reason] > حضر الشخص من السيرفر
+${prefix}mutechannel > تقفيل الشات
+${prefix}unmutechannel > فتح الشات
+${prefix}dc > مسح كل الرومات
+${prefix}dr > <مسح كل الرانكات <لازم تكون رانك البوت فوق كل الرانكات
+${prefix}ct [name] > انشاء شات
+${prefix}cv [name] > انشاء رووم فويس
+${prefix}temp > لانشاء روم مؤقت
+${prefix}delet [name] > مسح الشات او الرووم فويس
+${prefix}make [number] > ينشا لك الوان مع كم الوان تبي
+${prefix}color [number] > لختيار لون
+${prefix}deletecolors [number] > لحذف الالوان
 **
    `,`
            **اوامر الموسيقي**
 **
-${prefix}play → لتشغيل أغنية برآبط أو بأسم
-${prefix}skip → لتجآوز الأغنية الحآلية
-${prefix}pause → إيقآف الأغنية مؤقتا
-${prefix}resume → لموآصلة الإغنية بعد إيقآفهآ مؤقتا
-${prefix}vol → لتغيير درجة الصوت 100 - 0
-${prefix}stop → لإخرآج البوت من الروم
-${prefix}np → لمعرفة الأغنية المشغلة حآليا
-${prefix}queue → لمعرفة قآئمة التشغيل
+${prefix}play > لتشغيل أغنية برآبط أو بأسم
+${prefix}skip > لتجآوز الأغنية الحآلية
+${prefix}pause > إيقآف الأغنية مؤقتا
+${prefix}resume > لموآصلة الإغنية بعد إيقآفهآ مؤقتا
+${prefix}vol > لتغيير درجة الصوت 100 - 0
+${prefix}stop > لإخرآج البوت من الروم
+${prefix}np > لمعرفة الأغنية المشغلة حآليا
+${prefix}queue > لمعرفة قآئمة التشغيل
 **
         **اوامر الالعاب**
  **       
-${prefix}rps → حجر ورقة مقص
-${prefix}speed → اسرع كتابة
-${prefix}quas → اسئلة عامة
-${prefix}نكت → نكت 
-${prefix}لعبة فكك → فكك
-${prefix}عواصم عشوائي → عواصم
-${prefix}لعبة كت تويت → كت تويت
-${prefix}roll <number> → قرعة
-${prefix}لو خيروك بطريقة حلوة → لو خيروك
-${prefix}لعبة مريم → مريم
-${prefix}فوائد ونصائح  → هل تعلم
-${prefix}يعطيك عقابات قاسية → عقاب 
+${prefix}rps > حجر ورقة مقص
+${prefix}speed > اسرع كتابة
+${prefix}quas > اسئلة عامة
+${prefix}نكت < نكت
+${prefix}لعبة فكك < فكك
+${prefix}عواصم عشوائي < عواصم
+${prefix}لعبة كت تويت < كت تويت
+${prefix}roll <number> > قرعة
+${prefix}لو خيروك بطريقة حلوة < لو خيروك
+${prefix}لعبة مريم < مريم
+${prefix}فوائد ونصائح  < هل تعلم
+${prefix}يعطيك عقابات قاسية < عقاب 
 =.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.
 welcome يتم الترحيب فى روم باسم
 G.setwelcomer <text channel name> لاختيار روم للترحيب
