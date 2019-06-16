@@ -66,9 +66,6 @@ ${prefix}allbots → لعرض جميع البوتات الي بالسيرفر
 ${prefix}server → يعرض لك معلومات عن السيرفر
 ${prefix}bot → يعرض لك كل معلومات البوت
 ${prefix}count → يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
-${prefix}invites → يعرض لك  عدد انفايتاتك بالسيرفر 
-${prefix}invinfo <invitelink here> → لمعلومات عن الدعوه
-مثال : invinfo m82n8P
 ${prefix}invite-codes → يعرض لك روابط الانفايتات حكك في السيرفر 
 ${prefix}cal → اله حاسبة
 ${prefix}trans <language> <any thing> → يترجم لك الي تبيه من اي لغة
@@ -326,36 +323,6 @@ client.on('message', function(msg) {
 message.channel.send(`${user} has ${inviteCount} invites.`);
 });
   }
-});
- client.on("message", async message => {
-            if(!message.channel.guild) return;
-             if(message.content.startsWith(prefix + 'invite-codes')) {
-let guild = message.guild
-var codes = [""]
-message.channel.send(":postbox: **لقد قمت بأرسال جميع روابط الدعوات التي قمت بأنشائها في الخاص**")
-guild.fetchInvites()
-.then(invites => {
-invites.forEach(invite => {
-if (invite.inviter === message.author) {
-codes.push(`discord.gg/${invite.code}`)
-}
-})
-}).then(m => {
-if (codes.length < 0) {
-    var embed = new Discord.RichEmbed()
-.setColor("#000000")
-.addField(`Your invite codes in ${message.guild.name}`, `You currently don't have any active invites! Please create an invite and start inviting, then you will be able to see your codes here!`)
-message.author.send({ embed: embed });
-return;
-} else {
-    var embed = new Discord.RichEmbed()
-.setColor("#000000")
-.addField(`Your invite codes in ${message.guild.name}`, `Invite Codes:\n${codes.join("\n")}`)
-message.author.send({ embed: embed });
-return;
-}
-})
-}
 
 });
 client.on('message', msg => {
@@ -2969,29 +2936,7 @@ if (message.content.startsWith(prefix + 'watching')) {
 if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
     client.user.setActivity(argresult, {type : 'watching'});
  message.channel.sendMessage(`**${argresult}** : تم تغيير الووتشينق الى`)
-}
-});
-client.on('message', async message => {
-  let messageArray = message.content.split(' ');
-  let args = messageArray.slice(1);
-  if(message.content.startsWith(prefix + "invinfo")) {
-    if(!args) return message.reply('**حدد اسم دعوة**');
-    message.guild.fetchInvites().then(i => {
-      let inv = i.get(args[0]);
-      if(!inv) return message.reply(`**لم اقدر على ايجاد ${args}**`);
-      var iNv = new Discord.RichEmbed()
-      .setAuthor(message.author.username,message.author.avatarURL)
-      .setThumbnail(message.author.avatarURL)
-      .addField('# - صاحب الدعوة',inv.inviter,true)
-      .addField('# - روم الدعوة',inv.channel,true)
-      .addField('# - تاريخ انتهاء الدعوة',moment(inv.expiresAt).format('YYYY/M/DD:h'),true)
-      .addField('# - تم انشاء الدعوة',moment(inv.createdAt).format('YYYY/M/DD:h'),true)
-      .addField('# - مدة الدعوة',moment(inv.maxAge).format('DD **ساعة** h **يوم**'),true)
-      .addField('# - الاستخدامات',inv.uses || inv.maxUses,true)
-      message.channel.send(iNv);
-    });
-  }
-});
+	
 client.on('guildMemberAdd', member => {
     let memberavatar = member.user.avatarURL
     let embed = new Discord.RichEmbed()
